@@ -45,6 +45,7 @@ These apply regardless of role, platform, or task type.
 | Reporting a bug or blocker | [Bug Report Template](docs/templates/bug-report-template.md) | — |
 | Documenting an API for frontend | [API Documentation Template](docs/templates/api-doc-template.md) | — |
 | Documenting a form | [Form Documentation Template](docs/templates/form-doc-template.md) | — |
+| Practicing a standard with a real task | [Practice Tasks →](docs/tasks/README.md) | — |
 
 ---
 
@@ -177,9 +178,19 @@ Run these before marking any task done.
 
 | Checklist | Use When |
 |-----------|----------|
-| [Form Field Validation](docs/checklists/frontend/form-field-validation.md) | Building any form — every input type (text, email, phone, location, date, file, OTP, and more) |
+| [Form Field Validation](docs/checklists/frontend/form-field-validation.md) | Building any form field — every input type (text, email, phone, location, date, file, OTP, and more) |
 | [Login & Signup Standards](docs/checklists/frontend/login-signup.md) | Building login, signup, forgot password, reset password, or email verification |
 | [Add / Edit Consistency](docs/checklists/frontend/add-edit-consistency.md) | Building Add or Edit forms — ensures identical behavior, validation, and layout |
+| [Multi-Step Forms](docs/checklists/frontend/multi-step-forms.md) | Building any wizard or multi-step flow |
+| [Tables & Data Lists](docs/checklists/frontend/tables-data-lists.md) | Building any table or list — all states, sorting, filtering, pagination, bulk actions |
+| [Search, Filters & Pagination](docs/checklists/frontend/search-filters-pagination.md) | Adding search, filters, or pagination to any page |
+| [Modals & Dialogs](docs/checklists/frontend/modals-dialogs.md) | Building any modal — open/close, focus trap, accessibility, form modals |
+| [Notifications & Toasts](docs/checklists/frontend/notifications-toasts.md) | Adding feedback to any async action — types, timing, stacking, content standards |
+| [Delete & Destructive Actions](docs/checklists/frontend/delete-destructive-actions.md) | Any delete, archive, or irreversible action — risk levels, confirmation standards |
+| [Loading States & Skeletons](docs/checklists/frontend/loading-states-skeletons.md) | Any async action or data fetch — buttons, skeletons, page loading, tables |
+| [Error Handling](docs/checklists/frontend/error-handling.md) | Any page calling an API — field errors, banners, page errors, network, auth |
+| [Settings & Profile Pages](docs/checklists/frontend/settings-profile.md) | Building any settings or profile section |
+| [Permissions & Role-Based UI](docs/checklists/frontend/permissions-role-ui.md) | Any UI element that depends on the user's role |
 
 ### Supabase Checklists → [docs/checklists/supabase/](docs/checklists/supabase/)
 

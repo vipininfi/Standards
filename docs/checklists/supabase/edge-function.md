@@ -371,3 +371,13 @@ TESTING
 [ ] Staged on staging before production
 [ ] Secrets confirmed set in the correct Supabase project/environment
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by building a real Edge Function that calls a third-party API and handles every error case.
+
+**→ [Task 04: Build a Project Invite Edge Function](../../tasks/supabase/04-invite-edge-function.md)**
+
+Covers: full Edge Function structure (CORS/auth/validation/logic/response), Deno.env secrets, JWT validation, permission check, duplicate check, DB insert via service role, email via Resend, structured logging without sensitive data.

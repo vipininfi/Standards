@@ -358,3 +358,13 @@ NAMING
 MOBILE
 [ ] Tested on mobile browser (responsive layout verified)
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by building real Django templates with zero inline styles, zero inline scripts, and correct data-* attribute patterns.
+
+**→ [Task 02: Build the Project Detail Template](../../tasks/django/02-project-template.md)**
+
+Covers: 3-folder structure, base.html inheritance, project list/form/detail templates, status badge with CSS classes (no inline style), archive confirmation via data-project-name attribute (no string interpolation in script tags), responsive grid in CSS with variables.

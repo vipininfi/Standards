@@ -1,6 +1,6 @@
 # Documentation Index
 
-This folder contains everything the team needs to build correctly — standards to read before building, checklists to run before marking done, and templates to copy into tickets and pull requests.
+This folder contains everything the team needs to build correctly — standards to read before building, checklists to run before marking done, templates to copy into tickets and pull requests, and practice tasks to apply what you've learned.
 
 ---
 
@@ -11,6 +11,7 @@ This folder contains everything the team needs to build correctly — standards 
 | [standards/](#standards) | How to build — rules, patterns, and decisions for every platform and role |
 | [checklists/](#checklists) | What to check — run these before marking any task done |
 | [templates/](#templates) | What to copy — ready-made formats for tickets, PRs, and documentation |
+| [tasks/](#tasks) | What to build — realistic practice tasks to apply each standard hands-on |
 
 ---
 
@@ -116,3 +117,45 @@ Step-by-step checklists for every Supabase backend task.
 | [Completion Comment Template](templates/completion-comment-template.md) | Marking a task done with proper evidence — what was done, how to test, screenshots/links, time spent |
 | [API Documentation Template](templates/api-doc-template.md) | Documenting any backend API for the frontend team — endpoint details, request payload, all error cases, frontend code example |
 | [Form Documentation Template](templates/form-doc-template.md) | Documenting form fields, validation rules, submission behavior, and API integration |
+
+---
+
+## Tasks
+
+> Realistic practice tasks to build with what you've learned. Each task has a scenario, specific requirements, a "What NOT to do" section, and links directly to the checklist to run when done. Tasks are linked from the bottom of each relevant checklist — click "Practice Task" at the end of any checklist to go straight to the exercise.
+
+### Frontend Tasks → [tasks/frontend/](tasks/frontend/)
+
+| Task | What You Practice |
+|------|------------------|
+| [01 — Registration Form](tasks/frontend/01-registration-form.md) | Email, password strength, confirm password, phone E.164, checkbox, loading/error/success states |
+| [02 — Login Form with Forgot & Reset Password](tasks/frontend/02-login-form.md) | Auth flow, email enumeration prevention, token validation on page load, forgot password states |
+| [03 — Shared Add / Edit Project Form](tasks/frontend/03-add-edit-project-form.md) | One shared component, one schema, identical behavior in Add and Edit, pre-fill skeleton loader |
+
+### Supabase Tasks → [tasks/supabase/](tasks/supabase/)
+
+| Task | What You Practice |
+|------|------------------|
+| [01 — Create the Projects Table](tasks/supabase/01-create-projects-table.md) | Schema, constraints, CHECK, soft delete, updated_at trigger, composite index, migration file |
+| [02 — Write RLS Policies](tasks/supabase/02-rls-policies.md) | All four policy types, workspace membership subquery, role-based rules, WITH CHECK, full role testing |
+| [03 — Create Project API (RPC)](tasks/supabase/03-create-project-api.md) | Atomic RPC (project + task list + audit log), RAISE EXCEPTION error codes, API documentation |
+| [04 — Project Invite Edge Function](tasks/supabase/04-invite-edge-function.md) | Edge Function structure, JWT auth, Deno secrets, Resend email, logging rules |
+
+### Xano Tasks → [tasks/xano/](tasks/xano/)
+
+| Task | What You Practice |
+|------|------------------|
+| [01 — Create Project Endpoint](tasks/xano/01-create-project-endpoint.md) | Auth-first, reusable permission function, DB role check, field-level validation, standard error format |
+
+### Django Tasks → [tasks/django/](tasks/django/)
+
+| Task | What You Practice |
+|------|------------------|
+| [01 — Project List & Create View](tasks/django/01-project-list-create-view.md) | LoginRequiredMixin, WorkspaceMemberMixin, form validation, services.py separation, POST→redirect→GET |
+| [02 — Project Detail Template](tasks/django/02-project-template.md) | 3-folder structure, base.html, zero inline styles/scripts, data-* attributes for JS, responsive CSS |
+
+### Website Tasks → [tasks/website/](tasks/website/)
+
+| Task | What You Practice |
+|------|------------------|
+| [01 — Replicate a Landing Page](tasks/website/01-landing-page-section.md) | Pixel-perfect replication, design tokens, reusable components, 3 breakpoints, semantic HTML, performance |

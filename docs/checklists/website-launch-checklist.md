@@ -165,3 +165,13 @@ Run this before going live on any website build, replica, or migration.
 [ ] All credentials handed over securely
 [ ] Any known limitations documented
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by replicating a real multi-section landing page, pixel-perfect and fully responsive.
+
+**→ [Task 01: Replicate a Landing Page — Hero + Features + CTA](../../tasks/website/01-landing-page-section.md)**
+
+Covers: design token extraction from Figma, Hero/Features/CTA as reusable components, one FeatureCard mapped over data, responsive layout at 3 breakpoints, semantic HTML, CTA form with loading/error/success states, image optimization, Lighthouse performance check.

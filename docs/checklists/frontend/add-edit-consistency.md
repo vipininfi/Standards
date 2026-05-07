@@ -329,3 +329,13 @@ return (
 [ ] Mobile tested for both Add and Edit
 [ ] Ticket updated with evidence that both were tested
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by building a single shared form component used in both Add and Edit modes.
+
+**→ [Task 03: Build a Shared Add / Edit Project Form](../../tasks/frontend/03-add-edit-project-form.md)**
+
+Covers: one `ProjectForm` component with a `mode` prop, one shared validation schema imported in both modes, skeleton loader for pre-fill, identical field order and error messages, correct HTTP method per mode.

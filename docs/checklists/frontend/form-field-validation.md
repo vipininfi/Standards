@@ -99,7 +99,7 @@ Taken:    "This email is already registered."
 ```
 Password *
 [ ••••••••               ] [👁 Show]
-Password must be at least 8 characters with one uppercase, one number.
+Password must be at least 8 characters with one uppercase, one number and one special character.
 [████████░░░░] Strength: Good
 ```
 
@@ -770,3 +770,13 @@ Invalid: "Enter a valid color code (e.g. #2563EB)."
 [ ] All fields work on mobile — inputs are full width, touch-friendly
 [ ] Backend validates every field — frontend validation is UX only
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by building a real form with multiple field types, validation rules, and error states.
+
+**→ [Task 01: Build a User Registration Form](../../tasks/frontend/01-registration-form.md)**
+
+Covers: text, email, password strength + complexity, confirm password, phone (E.164 + country code), checkbox, loading state, duplicate email error, success state.

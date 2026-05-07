@@ -255,3 +255,13 @@ TESTING
 [ ] Validation failure tested
 [ ] Not found tested
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by building a real view with a reusable permission mixin, form validation, and a service layer.
+
+**→ [Task 01: Build a Project List & Create View](../../tasks/django/01-project-list-create-view.md)**
+
+Covers: LoginRequiredMixin, WorkspaceMemberMixin (write once, use everywhere), ProjectForm with cross-field date validation, ProjectService.create_project() with slug + uniqueness + audit log, POST→redirect→GET pattern, PermissionDenied handling.

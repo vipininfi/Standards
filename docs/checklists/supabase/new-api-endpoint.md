@@ -304,3 +304,13 @@ DOCUMENTATION
 [ ] Frontend code example provided
 [ ] Handed off to frontend team
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by building a real multi-step RPC function with atomic operations, validation, and full API documentation.
+
+**→ [Task 03: Build a Create Project API (RPC)](../../tasks/supabase/03-create-project-api.md)**
+
+Covers: RPC function with SECURITY INVOKER, six validation steps, workspace membership check in SQL, atomic insert of project + task list + audit log, RAISE EXCEPTION with standard error codes, full API documentation using the template.

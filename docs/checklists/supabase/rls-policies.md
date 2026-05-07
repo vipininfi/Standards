@@ -245,3 +245,13 @@ DOCUMENTATION
 [ ] Role permission matrix documented for this table
 [ ] RLS policies documented in API documentation or table notes
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by writing all four RLS policies for a real table, then testing them across every role.
+
+**→ [Task 02: Write RLS Policies for the Projects Table](../../tasks/supabase/02-rls-policies.md)**
+
+Covers: SELECT (members only, admins see soft-deleted), INSERT (members only, created_by enforced), UPDATE (creator or admin, workspace_id cannot change), no DELETE policy, testing matrix for all roles including viewer, non-member, and anonymous.

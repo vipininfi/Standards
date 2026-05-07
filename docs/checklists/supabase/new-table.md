@@ -284,3 +284,13 @@ DOCUMENTATION
 [ ] API documentation written if endpoint created
 [ ] Frontend team notified
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by creating a real table with the correct schema, constraints, indexes, soft delete, and migration file.
+
+**→ [Task 01: Create the Projects Table](../../tasks/supabase/01-create-projects-table.md)**
+
+Covers: all required columns (id, created_at, updated_at, workspace_id, created_by), CHECK constraints on status and end_date, soft delete column, updated_at trigger, composite index, migration file structure.

@@ -295,3 +295,13 @@ DOCUMENTATION
 [ ] All error codes documented
 [ ] Frontend call example provided
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by building a real Xano endpoint with auth-first, DB permission check, validation, and a reusable function.
+
+**→ [Task 01: Build a Create Project Endpoint](../../tasks/xano/01-create-project-endpoint.md)**
+
+Covers: Auth Token as first precondition, reusable `check_workspace_permission` function, role check from workspace_members table, field-level validation errors, uniqueness check, created_by from token (not from input), standard error format with correct HTTP status codes.

@@ -21,11 +21,38 @@ These apply across all platforms and roles.
 
 Detailed checklists for specific frontend tasks and UI patterns.
 
+**Forms & Auth**
+
 | Checklist | Use When |
 |-----------|----------|
-| [Form Field Validation](frontend/form-field-validation.md) | Building any form — covers every input type: text, email, phone (E.164), location/address (Google Places + lat/lng), date, time, datetime, file/image upload (MIME type), OTP, autocomplete, percentage, color picker, and more |
-| [Login & Signup Standards](frontend/login-signup.md) | Building login, signup, forgot password, reset password, email verification, or OAuth/social login flows |
-| [Add / Edit Consistency](frontend/add-edit-consistency.md) | Building Add or Edit forms for the same entity — shared component requirement, identical validation, UI matching, pre-fill behavior |
+| [Form Field Validation](frontend/form-field-validation.md) | Building any form — every input type: text, email, phone (E.164), location/Google Places, date, time, file upload (MIME type), OTP, autocomplete, and more |
+| [Login & Signup Standards](frontend/login-signup.md) | Building login, signup, forgot password, reset password, email verification, or OAuth/social login |
+| [Add / Edit Consistency](frontend/add-edit-consistency.md) | Building Add or Edit forms for the same entity — shared component, identical validation, pre-fill behavior |
+| [Multi-Step Forms](frontend/multi-step-forms.md) | Building any wizard or multi-step flow — step validation, progress indicator, back/forward, data preservation |
+
+**Data Display**
+
+| Checklist | Use When |
+|-----------|----------|
+| [Tables & Data Lists](frontend/tables-data-lists.md) | Building any table or list — skeleton loading, empty state, error state, sorting, filtering, pagination, row/bulk actions |
+| [Search, Filters & Pagination](frontend/search-filters-pagination.md) | Adding search, filters, or pagination — debounce, URL state, backend-sent, empty states |
+
+**UI Components**
+
+| Checklist | Use When |
+|-----------|----------|
+| [Modals & Dialogs](frontend/modals-dialogs.md) | Building any modal — open/close, focus trap, ESC key, form modals, confirmation dialogs, accessibility |
+| [Notifications & Toasts](frontend/notifications-toasts.md) | Adding feedback to any async action — types, auto-dismiss, stacking, inline banners, message standards |
+| [Delete & Destructive Actions](frontend/delete-destructive-actions.md) | Any delete, archive, or irreversible action — risk levels, confirmation standards, type-to-confirm, soft vs hard delete |
+
+**States & Behavior**
+
+| Checklist | Use When |
+|-----------|----------|
+| [Loading States & Skeletons](frontend/loading-states-skeletons.md) | Any async action or data fetch — button loading, skeleton screens, page loading, table loading |
+| [Error Handling](frontend/error-handling.md) | Any page or feature calling an API — field errors, form banners, page errors, network failures, auth errors |
+| [Settings & Profile Pages](frontend/settings-profile.md) | Building any settings section — save behavior, password change, avatar upload, notification prefs, danger zone |
+| [Permissions & Role-Based UI](frontend/permissions-role-ui.md) | Any UI dependent on the user's role — hide vs disable, tooltip for disabled, page access, role read from backend |
 
 ---
 

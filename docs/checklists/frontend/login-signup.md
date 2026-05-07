@@ -475,3 +475,13 @@ Show strength as a progress bar or label — do NOT block submission with a cust
 [ ] No password or token in logs
 [ ] Backend enforces all auth rules — frontend only displays
 ```
+
+---
+
+## Practice Task
+
+Apply what you learned by building the full auth flow: login, forgot password, and reset password.
+
+**→ [Task 02: Build a Login Form with Forgot & Reset Password](../../tasks/frontend/02-login-form.md)**
+
+Covers: login error handling, email enumeration prevention, forgot password confirmation state, reset password with token validation on page load before rendering the form.
