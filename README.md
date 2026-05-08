@@ -135,12 +135,13 @@ Key rules:
 
 | Document | What It Covers |
 |----------|----------------|
-| [Supabase Standards](docs/standards/supabase/README.md) → [Database & RLS](docs/standards/supabase/01-database-and-rls.md) · [API Design](docs/standards/supabase/02-api-design.md) · [API Docs](docs/standards/supabase/03-api-documentation.md) · [Edge Functions](docs/standards/supabase/04-edge-functions.md) · [Multi-Tenant & Storage](docs/standards/supabase/05-validation-multitenant-storage.md) · [Operations & Testing](docs/standards/supabase/06-operations-and-testing.md) | APIs, RLS, database schema, Edge Functions, validation, error handling, webhooks, migrations |
+| [Supabase Standards](docs/standards/supabase/README.md) → [Database & RLS](docs/standards/supabase/01-database-and-rls.md) · [API Design](docs/standards/supabase/02-api-design.md) · [API Docs](docs/standards/supabase/03-api-documentation.md) · [Edge Functions](docs/standards/supabase/04-edge-functions.md) · [Multi-Tenant & Storage](docs/standards/supabase/05-validation-multitenant-storage.md) · [Operations & Testing](docs/standards/supabase/06-operations-and-testing.md) · [RPC Functions](docs/standards/supabase/07-rpc-functions.md) | APIs, RLS, database schema, Edge Functions, RPC functions, validation, error handling, webhooks, migrations |
 | [Xano Standards](docs/standards/xano-standards.md) | Xano API design, auth, validation, reusable functions, error format, webhooks, naming |
 | [Backend-First Logic Standard](docs/standards/backend-first-logic.md) | What belongs on the backend vs frontend, anti-patterns, platform-specific rules |
 | [Django Template Standards](docs/standards/django-template-standards.md) | 3-folder structure, template inheritance, no inline styles/scripts, data-* pattern, naming |
 | [Website Replication Standards](docs/standards/website/README.md) → [Scoping & Design](docs/standards/website/01-scoping-and-design.md) · [By Platform](docs/standards/website/02-building-by-platform.md) · [Migration](docs/standards/website/03-migration.md) · [QA & Performance](docs/standards/website/04-responsive-qa-performance.md) · [Launch & Handoff](docs/standards/website/05-launch-and-handoff.md) | Figma → React/WeWeb/Bubble, existing site migration, SEO, forms, integrations, launch |
-| [Frontend & UI Standards](docs/standards/frontend-ui-standards.md) | Forms, validation, loading states, error handling, design system, components, mobile |
+| [Frontend Standards](docs/standards/frontend/README.md) → [Forms & Validation](docs/standards/frontend/01-forms-validation.md) · [Data Display](docs/standards/frontend/02-data-display.md) · [UI Components](docs/standards/frontend/03-ui-components.md) · [Error & Feedback](docs/standards/frontend/04-error-feedback.md) · [Permissions & Auth UI](docs/standards/frontend/05-permissions-auth.md) · [Settings & Profile](docs/standards/frontend/06-settings.md) | Forms, validation, tables, modals, toasts, loading states, errors, permissions, settings — all UI patterns |
+| [Frontend & UI Standards](docs/standards/frontend-ui-standards.md) | Original single-file reference — forms, loading states, error handling, design system, components |
 | [Code Reusability Standards](docs/standards/code-reusability-standards.md) | When to make things reusable, platform-specific guides (React/WeWeb/Xano/Django/Supabase) |
 | [Team Ownership Standards](docs/standards/team-ownership.md) | Work updates, issue raising, communication, accountability, ticket discipline, PR standards |
 | [QA & Delivery Standards](docs/standards/qa-delivery-standards.md) | Testing flows, QA checklists, definition of done across all roles |
@@ -200,12 +201,17 @@ Run these before marking any task done.
 | [RLS Policies](docs/checklists/supabase/rls-policies.md) | Writing or reviewing Row Level Security policies |
 | [New API Endpoint](docs/checklists/supabase/new-api-endpoint.md) | Building any new Supabase endpoint or RPC |
 | [Edge Function](docs/checklists/supabase/edge-function.md) | Building a Supabase Edge Function |
+| [RPC Function](docs/checklists/supabase/rpc-function.md) | Writing any Postgres RPC function exposed via supabase.rpc() |
+| [Storage Bucket](docs/checklists/supabase/storage-bucket.md) | Creating a storage bucket or adding file upload functionality |
+| [Database Trigger](docs/checklists/supabase/database-trigger.md) | Writing a database trigger or trigger function |
 
 ### Xano Checklists → [docs/checklists/xano/](docs/checklists/xano/)
 
 | Checklist | Use When |
 |-----------|----------|
 | [New API Endpoint](docs/checklists/xano/new-endpoint.md) | Building any new Xano endpoint |
+| [Reusable Function](docs/checklists/xano/reusable-function.md) | Extracting shared logic into a Xano Custom Function |
+| [Webhook Endpoint](docs/checklists/xano/webhook-endpoint.md) | Building a Xano webhook receiver from an external service |
 
 ### Django Checklists → [docs/checklists/django/](docs/checklists/django/)
 
@@ -213,12 +219,17 @@ Run these before marking any task done.
 |-----------|----------|
 | [New View](docs/checklists/django/new-view.md) | Building any Django view |
 | [Template](docs/checklists/django/template.md) | Building any Django HTML template |
+| [Model](docs/checklists/django/model.md) | Creating or modifying a Django model |
+| [Form / Serializer](docs/checklists/django/form-serializer.md) | Building a Django Form or DRF Serializer |
+| [DRF API View](docs/checklists/django/api-view.md) | Building a Django REST Framework API view |
 
 ### Website Checklists → [docs/checklists/website/](docs/checklists/website/)
 
 | Checklist | Use When |
 |-----------|----------|
 | [Website Launch Checklist](docs/checklists/website-launch-checklist.md) | Pre-launch gate for all platforms |
+| [WeWeb Page Build](docs/checklists/website/weweb-page.md) | Building any WeWeb page or section |
+| [React Page Build](docs/checklists/website/react-page.md) | Building any React page or component |
 
 ---
 

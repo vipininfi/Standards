@@ -27,7 +27,7 @@
 
 ## Supabase Tasks → [supabase/](supabase/)
 
-These four tasks build on each other in sequence — complete them in order.
+These tasks build on each other in sequence — complete them in order.
 
 | Task | What You Practice |
 |------|------------------|
@@ -35,6 +35,8 @@ These four tasks build on each other in sequence — complete them in order.
 | [02 — Write RLS Policies](supabase/02-rls-policies.md) | All four policy types (SELECT/INSERT/UPDATE/DELETE), workspace membership subquery, role-based access, WITH CHECK, testing across all roles |
 | [03 — Create Project API (RPC)](supabase/03-create-project-api.md) | RPC function design, atomic multi-step operations, validation in SQL, standard error codes via RAISE EXCEPTION, API documentation |
 | [04 — Project Invite Edge Function](supabase/04-invite-edge-function.md) | Edge Function structure, CORS, JWT auth, secrets management, third-party email (Resend), webhook-safe logging, all error cases |
+| [05 — Archive Project RPC Function](supabase/05-rpc-function-task.md) | Advanced RPC: SECURITY INVOKER, 7-step validation order, multi-table atomic update, BUSINESS_RULE_VIOLATION check, EXCEPTION WHEN OTHERS |
+| [06 — Storage Bucket: Project Attachments](supabase/06-storage-setup-task.md) | Storage bucket setup, RLS on storage.objects, file path structure, signed URLs (not public URLs), upload/download/delete flow |
 
 ---
 
@@ -43,17 +45,20 @@ These four tasks build on each other in sequence — complete them in order.
 | Task | What You Practice |
 |------|------------------|
 | [01 — Create Project Endpoint](xano/01-create-project-endpoint.md) | Auth-first pattern, reusable `check_workspace_permission` function, three-layer validation, standard error format, role check from DB |
+| [02 — Reusable Function: check_workspace_permission](xano/02-reusable-function.md) | Extracting shared logic, role hierarchy (not just equality), single responsibility, error raising, updating all calling endpoints |
 
 ---
 
 ## Django Tasks → [django/](django/)
 
-These two tasks build on each other — complete Task 01 before Task 02.
+These tasks build on each other — complete in order.
 
 | Task | What You Practice |
 |------|------------------|
 | [01 — Project List & Create View](django/01-project-list-create-view.md) | LoginRequiredMixin, WorkspaceMemberMixin, form validation, services.py separation, POST→redirect→GET pattern, PermissionDenied |
 | [02 — Project Detail Template](django/02-project-template.md) | 3-folder structure, base.html inheritance, zero inline styles/scripts, data-* attributes for JS, responsive CSS with variables |
+| [03 — Project Model + Service](django/03-model-and-service.md) | Model field types, constraints (UniqueConstraint, CheckConstraint), soft delete with custom manager, services.py with business logic |
+| [04 — DRF API Views: Projects](django/04-drf-api-view.md) | DRF view types, custom permission classes (database-verified), serializer wiring, service delegation, correct HTTP status codes, pagination |
 
 ---
 
