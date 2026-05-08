@@ -71,3 +71,17 @@ Split into 5 focused files covering the full website build and migration lifecyc
 | [03 — Migration](website/03-migration.md) | Existing site reverse-engineering checklist, migration flow, WordPress audit and migration decisions, content migration standards, SEO preservation checklist and anti-patterns, forms and integrations replication |
 | [04 — Responsive, QA & Performance](website/04-responsive-qa-performance.md) | Breakpoint standards, responsive checklist per screen size, pixel-perfect QA process, performance rules (image optimization, lazy loading, Core Web Vitals), accessibility must-haves, security checklist, CMS decision table, no-code naming standards, animation replication |
 | [05 — Launch & Handoff](website/05-launch-and-handoff.md) | Header/footer documentation, tracking and analytics installation, redirect mapping, launch checklist, required documentation, form/API handoff template, QA checklists (visual / functional / SEO / performance), client review standard, common risks, platform-specific risks, definition of done, client message template |
+
+---
+
+## Third-Party Implementation Standards → [third-parties-implementation/](third-parties-implementation/)
+
+Standards for integrating external payment and email services. Each file covers full setup, configuration, usage patterns, metadata conventions, security, and error handling.
+
+| Document | What It Covers |
+|----------|---------------|
+| [Overview](third-parties-implementation/README.md) | Core principles: keys in env vars, secrets server-side only, webhook signatures always verified, idempotency, never 500 from webhooks |
+| [Stripe](third-parties-implementation/stripe.md) | API keys, Customer creation, Products & Prices (lookup keys), Payment Intents, Checkout Sessions, Subscriptions (all states), Webhooks (signature verification + idempotency + event catalog), Metadata standards (consistent keys across objects), Decline code mapping, 3DS/SCA, Refunds |
+| [Razorpay](third-parties-implementation/razorpay.md) | API keys, Orders (server-side, paise amounts), Payment verification (HMAC SHA256 — required before activation), Checkout.js integration, Subscriptions (all states + events), Webhooks (signature verification + idempotency), Notes/metadata standards, Refunds |
+| [SendGrid](third-parties-implementation/sendgrid.md) | When to use vs Gmail, Domain authentication, API key (restricted access), Template decision tree (code-rendered vs Dynamic Template), Code-rendered template structure (HTML + plaintext), Dynamic Template standards (template IDs in env vars), Subject/from standards, Transactional email link expiry, Error handling + retry logic, Bounce/suppression handling |
+| [Gmail](third-parties-implementation/gmail.md) | When to use Gmail (dev/internal/low-volume), App Passwords (SMTP + 2FA), OAuth2 setup, Django configuration per environment (console/filebased/SMTP/MailHog), Rate limits, When to switch to SendGrid |

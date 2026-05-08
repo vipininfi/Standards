@@ -145,6 +145,7 @@ Key rules:
 | [Code Reusability Standards](docs/standards/code-reusability-standards.md) | When to make things reusable, platform-specific guides (React/WeWeb/Xano/Django/Supabase) |
 | [Team Ownership Standards](docs/standards/team-ownership.md) | Work updates, issue raising, communication, accountability, ticket discipline, PR standards |
 | [QA & Delivery Standards](docs/standards/qa-delivery-standards.md) | Testing flows, QA checklists, definition of done across all roles |
+| [Third-Party Integration Standards](docs/standards/third-parties-implementation/README.md) → [Stripe](docs/standards/third-parties-implementation/stripe.md) · [Razorpay](docs/standards/third-parties-implementation/razorpay.md) · [SendGrid](docs/standards/third-parties-implementation/sendgrid.md) · [Gmail](docs/standards/third-parties-implementation/gmail.md) | Payment gateways (Stripe, Razorpay), email providers (SendGrid, Gmail) — full setup, configuration, webhook standards, metadata, error handling |
 
 ---
 
@@ -230,6 +231,15 @@ Run these before marking any task done.
 | [Website Launch Checklist](docs/checklists/website-launch-checklist.md) | Pre-launch gate for all platforms |
 | [WeWeb Page Build](docs/checklists/website/weweb-page.md) | Building any WeWeb page or section |
 | [React Page Build](docs/checklists/website/react-page.md) | Building any React page or component |
+
+### Third-Party Integration Checklists → [docs/checklists/third-parties-implementation/](docs/checklists/third-parties-implementation/)
+
+| Checklist | Use When |
+|-----------|----------|
+| [Stripe Integration](docs/checklists/third-parties-implementation/stripe-integration.md) | Adding Stripe payments — keys, customers, Payment Intents, Checkout, subscriptions, webhooks, metadata, refunds |
+| [Razorpay Integration](docs/checklists/third-parties-implementation/razorpay-integration.md) | Adding Razorpay payments — keys, orders, payment verification (HMAC SHA256), Checkout.js, subscriptions, webhooks, refunds |
+| [SendGrid Integration](docs/checklists/third-parties-implementation/sendgrid-integration.md) | Setting up SendGrid — domain auth, API key, template decision, code-rendered vs dynamic templates, error handling |
+| [Gmail Integration](docs/checklists/third-parties-implementation/gmail-integration.md) | Using Gmail SMTP — App Passwords, Django config, limits, when to switch to SendGrid |
 
 ---
 

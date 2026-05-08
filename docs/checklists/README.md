@@ -101,3 +101,14 @@ Step-by-step checklists for every Supabase backend task.
 | [Website Launch Checklist](website-launch-checklist.md) | Pre-launch gate — design, responsive testing, forms, SEO, migration redirects, analytics, performance, accessibility, go-live, client handoff |
 | [WeWeb Page Build](website/weweb-page.md) | Building a WeWeb page — global layout, data binding (all 4 states), Xano calls, forms, reusable components, mobile |
 | [React Page Build](website/react-page.md) | Building a React page — component structure, data fetching hooks, shared Add/Edit forms, TypeScript, accessibility, mobile |
+
+---
+
+## Third-Party Integrations → [third-parties-implementation/](third-parties-implementation/)
+
+| Checklist | Use When |
+|-----------|----------|
+| [Stripe Integration](third-parties-implementation/stripe-integration.md) | Adding any Stripe payment flow — keys, customers, Payment Intents, Checkout, subscriptions, webhooks, metadata, error handling, refunds |
+| [Razorpay Integration](third-parties-implementation/razorpay-integration.md) | Adding any Razorpay payment flow — keys, order creation, payment verification (HMAC SHA256), Checkout.js, subscriptions, webhooks, refunds |
+| [SendGrid Integration](third-parties-implementation/sendgrid-integration.md) | Setting up SendGrid — domain auth, API key, template decision, code-rendered vs dynamic templates, error handling, bounce management |
+| [Gmail Integration](third-parties-implementation/gmail-integration.md) | Using Gmail SMTP — App Passwords, Django config, environment check, when to switch to SendGrid |
