@@ -15,6 +15,22 @@ These apply to every team member regardless of role or platform.
 | [Team Ownership Standards](team-ownership.md) | How the team works — work update format (In Progress / Completed / Blocked), issue raising, ticket discipline, PR standards, communication rules, escalation process, and accountability for bugs. |
 | [QA & Delivery Standards](qa-delivery-standards.md) | What "done" actually means — self-testing checklist, definition of done per role, required test cases, RLS testing matrix, QA handoff checklist, and a summary table across all roles. |
 | [Frontend & UI Standards](frontend-ui-standards.md) | UI rules for React and WeWeb — Add/Edit consistency (same component, same schema), form standards, required field indicators, password validation, phone input (E.164), loading states, error display, notifications, delete confirmation, design system, and backend+frontend error contract. |
+
+---
+
+## Frontend Standards → [frontend/](frontend/)
+
+Split into 6 focused files covering all frontend development patterns.
+
+| Document | What It Covers |
+|----------|---------------|
+| [Overview & Non-Negotiables](frontend/README.md) | Core rules every frontend task must follow — loading states, no silent failures, backend enforces all rules |
+| [01 — Forms & Validation](frontend/01-forms-validation.md) | Form structure, field standards (text/date/select/file), required field markers, validation timing (on submit vs on blur), error display rules, Add/Edit consistency, password strength, phone (E.164), file upload (MIME type), disabled fields, form submission |
+| [02 — Data Display](frontend/02-data-display.md) | Tables, lists, cards — null as em dash, date formatting, status badges, all 4 state requirements (loading/empty/error/populated), sorting, search (debounce, autocomplete), filters (chips, URL params), pagination, infinite scroll, URL state, empty states, row/bulk actions, mobile |
+| [03 — UI Components](frontend/03-ui-components.md) | Modals (open/close/focus trap/3-level confirmation), toasts (types/timing/stacking/triggers), loading states (button labels table), skeleton screens (when to use), buttons, badges, tooltips, dropdowns, tabs, accordion |
+| [04 — Error & Feedback](frontend/04-error-feedback.md) | Error types and display locations, field-level errors, form API errors, page-level errors, API error code mapping table, empty states, destructive action confirmation (3 risk levels), network errors, auth errors, message standards, no silent failures rules |
+| [05 — Permissions & Auth UI](frontend/05-permissions-auth.md) | Fundamental rule (backend enforces), hide vs disable decision table, reading role from auth session (not URL/localStorage), UI element permission states (buttons/forms/nav/tables), page-level access, partial access, real-time role changes, auth flow standards |
+| [06 — Settings & Profile](frontend/06-settings.md) | Page structure, general settings (email change flow, timezone), save behavior (explicit vs auto-save), password change section, avatar upload (MIME/EXIF), notification preferences, connected accounts, danger zone (leave/delete with type-to-confirm) |
 | [Django Template Standards](django-template-standards.md) | Three-folder rule (CSS in `static/css/`, JS in `static/js/`, HTML in `templates/`), base.html inheritance, no inline styles or scripts, Django data to JavaScript via `data-*` attributes (never string interpolation), reusable `{% include %}` components, static file loading with `{% static %}`, naming conventions. |
 
 ---

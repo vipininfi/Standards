@@ -7,6 +7,8 @@
 | Checklist | Use When |
 |-----------|----------|
 | [New API Endpoint](new-endpoint.md) | Building any new Xano endpoint — auth, permissions, validation, response format, reusable functions, documentation |
+| [Reusable Function](reusable-function.md) | Extracting shared logic into a Xano Custom Function — naming, single responsibility, inputs/outputs, error raising, testing |
+| [Webhook Endpoint](webhook-endpoint.md) | Building a Xano webhook receiver — signature verification, idempotency, payload handling, response standards, logging |
 
 ---
 

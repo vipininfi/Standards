@@ -14,6 +14,7 @@
 | [04 — Edge Functions](04-edge-functions.md) | When to use Edge Functions, required structure, response standard, auth pattern, full Edge Function example |
 | [05 — Validation, Multi-Tenant & Storage](05-validation-multitenant-storage.md) | Validation layers, frontend error contract, multi-tenant scoping, workspace membership, role permission matrix, storage RLS |
 | [06 — Audit, Webhooks, Migrations & Testing](06-operations-and-testing.md) | Audit logs, edge function logging, webhooks, API keys, versioning, migrations, testing standards, RLS testing matrix, backend handoff checklist |
+| [07 — RPC & Postgres Functions](07-rpc-functions.md) | When to use RPC vs direct query vs Edge Function, SECURITY INVOKER vs SECURITY DEFINER, parameter naming (p_ prefix), return type standards, validation order (7 steps), error raising format, transaction handling, auth pattern, naming conventions, performance rules, testing requirements |
 
 ---
 

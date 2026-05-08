@@ -7,6 +7,8 @@
 | Checklist | Use When |
 |-----------|----------|
 | [Website Launch Checklist](../website-launch-checklist.md) | Full pre-launch gate — covers all platforms (React, WeWeb, Bubble, WordPress) |
+| [WeWeb Page Build](weweb-page.md) | Building a WeWeb page — global layout, data binding (all 4 states), forms, Xano calls, reusable components, mobile |
+| [React Page Build](react-page.md) | Building a React page — component structure, data fetching hooks, forms (shared Add/Edit), TypeScript, accessibility, mobile |
 
 ---
 

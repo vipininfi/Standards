@@ -66,6 +66,9 @@ Step-by-step checklists for every Supabase backend task.
 | [RLS Policies](supabase/rls-policies.md) | Writing or reviewing Row Level Security — policy patterns by access type, role permission matrix, anti-patterns, full testing guide per role |
 | [New API Endpoint](supabase/new-api-endpoint.md) | Building any new endpoint (direct query / RPC / Edge Function) — auth, input validation, response format, error codes, testing requirements |
 | [Edge Function](supabase/edge-function.md) | Building a Supabase Edge Function — required structure, CORS, auth pattern, secrets management, error handling, webhook signature verification |
+| [RPC Function](supabase/rpc-function.md) | Writing any Postgres RPC function — SECURITY mode, parameter naming, validation order, error format, transaction safety |
+| [Storage Bucket](supabase/storage-bucket.md) | Creating a storage bucket — visibility, RLS policies, file path structure, signed URLs, upload/delete flow |
+| [Database Trigger](supabase/database-trigger.md) | Writing a database trigger — BEFORE vs AFTER, trigger function standards, timestamps, audit log pattern |
 
 ---
 
@@ -74,6 +77,8 @@ Step-by-step checklists for every Supabase backend task.
 | Checklist | Use When |
 |-----------|----------|
 | [New API Endpoint](xano/new-endpoint.md) | Building any Xano endpoint — auth token as first step, DB-based permission check, input validation order, standard error format, reusable function extraction |
+| [Reusable Function](xano/reusable-function.md) | Extracting shared logic into a Xano Custom Function — naming, single responsibility, inputs/outputs, error raising, testing |
+| [Webhook Endpoint](xano/webhook-endpoint.md) | Building a Xano webhook receiver — signature verification, idempotency, payload handling, response standards, logging |
 
 ---
 
@@ -83,6 +88,9 @@ Step-by-step checklists for every Supabase backend task.
 |-----------|----------|
 | [New View](django/new-view.md) | Building any Django view — auth decorators, form/serializer validation, services.py pattern, response handling, error mapping, testing |
 | [Template](django/template.md) | Building any Django HTML template — 3-folder structure, base.html inheritance, zero inline styles/scripts, data-* attribute pattern, CSRF helper |
+| [Model](django/model.md) | Creating or modifying a Django model — field types, relationships, on_delete, null/blank, constraints, indexes, Meta class, migrations |
+| [Form / Serializer](django/form-serializer.md) | Building a Django Form or DRF Serializer — field definitions, field-level vs cross-field validation, read_only/write_only fields |
+| [DRF API View](django/api-view.md) | Building a DRF API view — view type selection, permission classes, serializer wiring, service delegation, response format, pagination |
 
 ---
 
@@ -91,3 +99,5 @@ Step-by-step checklists for every Supabase backend task.
 | Checklist | Use When |
 |-----------|----------|
 | [Website Launch Checklist](website-launch-checklist.md) | Pre-launch gate — design, responsive testing, forms, SEO, migration redirects, analytics, performance, accessibility, go-live, client handoff |
+| [WeWeb Page Build](website/weweb-page.md) | Building a WeWeb page — global layout, data binding (all 4 states), Xano calls, forms, reusable components, mobile |
+| [React Page Build](website/react-page.md) | Building a React page — component structure, data fetching hooks, shared Add/Edit forms, TypeScript, accessibility, mobile |
